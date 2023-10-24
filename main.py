@@ -18,7 +18,7 @@ def defence(char_name, char_class):
         damage = 10 + randint(-2, 2)
     if char_class == 'healer':
         damage = 10 + randint(2, 5)
-    return f'{char_name} блокировал {damage} урона'
+    return f'{char_name} блокировал {damage} ед. урона'
 
 
 def special(char_name, char_class):
@@ -31,7 +31,7 @@ def special(char_name, char_class):
     if char_class == 'healer':
         value = 10 + 30
         skill = 'Защита'
-    return f'{char_name} применил специальное умение {skill} {value}»'
+    return f'{char_name} применил специальное умение «{skill} {value}»'
 
 
 def start_training(char_name, char_class):
